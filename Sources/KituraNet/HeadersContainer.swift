@@ -21,7 +21,9 @@ import LoggerAPI
 /// A class that abstracts out the HTTP header APIs of the `ServerRequest` and
 /// `ServerResponse` protocols.
 public class HeadersContainer {
-    
+
+    public init() {}
+
     /// The header storage
     internal var headers: [String: (key: String, value: [String])] = [:]
     
